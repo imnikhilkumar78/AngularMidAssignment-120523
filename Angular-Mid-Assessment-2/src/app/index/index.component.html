@@ -1,0 +1,28 @@
+<nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+  <div class="navbar-brand">XYZ Hotel</div>
+</nav>
+
+<hr />
+<div class="d-flex justify-content-center align-items-center flex-column">
+  <label for="businessOwner" class="mt-4 mb-2">Business Owner:</label>
+  <input
+    type="text"
+    id="businessOwner"
+    [(ngModel)]="ownerName"
+    class="p-2 mb-3 border rounded"
+  /><br /><br />
+
+  <label for="trainingName" class="mb-2">Training Name:</label>
+  <input
+    type="text"
+    id="trainingName"
+    [(ngModel)]="trainingName"
+    class="p-2 mb-3 border rounded"
+  /><br /><br />
+  <button (click)="getTrainingHallName()" class="btn btn-primary">
+    Get Information about Training Hall
+  </button>
+</div>
+
+<hr />
+<router-outlet></router-outlet>
